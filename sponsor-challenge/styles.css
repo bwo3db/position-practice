@@ -1,37 +1,134 @@
-/* 
+/*
 
 COLORS
 Find some way to get the correct background color.
 
 
 CUSTOM FONTS
-In this example we're using Gotham, a paid font. (This means it's not available on Google Fonts or similar services.) So, we have to import it in a different way. Look up "font-face" on Google to see if you can understand how to use it. 
+In this example we're using Gotham, a paid font. (This means it's not available on Google Fonts or similar services.) So, we have to import it in a different way. Look up "font-face" on Google to see if you can understand how to use it.
 
 
 TRANSPARENCY
-There is a semi-transparent black background behind the headline "Here's how your company can connect with our students". Look up "rgba" on Google to see if you can figure out how to recreate that. 
+There is a semi-transparent black background behind the headline "Here's how your company can connect with our students". Look up "rgba" on Google to see if you can figure out how to recreate that.
 
 
 HOVERING
-When you hover on the link in the right section, it shows an underline. Look up "how to change CSS when hovering" on Google to see if you can figure out how to do that. 
+When you hover on the link in the right section, it shows an underline. Look up "how to change CSS when hovering" on Google to see if you can figure out how to do that.
 
 
 REMOVING MARGIN ON EVERY 2ND ITEM
-With the partner logos, you'll find that you want to have margin sometimes on the right but sometimes you don't want any margin. "nth-child" is what you're looking for here to make this happen. Google that and see if you can figure it out. 
+With the partner logos, you'll find that you want to have margin sometimes on the right but sometimes you don't want any margin. "nth-child" is what you're looking for here to make this happen. Google that and see if you can figure it out.
 
 */
+*{
+	font-family:'Gotham', Helvetica, sans-serif;
+}
+
+
+
+html{
+	margin:0;
+	padding:0;
+}
+
+h1{
+	padding-top:0px;
+	margin-top:0px;
+}
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Gotham', Helvetica, sans-serif;
-	background-color: #485563;
+	background-color:rgb(72,85,99);
 }
 
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	background-color:white;
+/*	padding-top:21.44px;
+	padding-left:20px;*/
+	padding:50px;
+	height:400px;
+}
+
+.section {
+	height:300px;
+	width: 30%;
+	margin-right: 5%;
+	display: inline-block;
+	vertical-align: top;
+	position:relative;
+	background-color:white;
+}
+
+.bnb,.dorsata,.galant,.ilab,.locus,.vilcap{
+	position:absolute;
+	width:45%;
+}
+
+.bnb{
+	left:0;
+	top:20px;
+}
+
+.dorsata{
+	right:0;
+	top:0;
+}
+
+.locus{
+	bottom:0;
+	left:0;
+}
+
+.vilcap{
+	bottom:0;
+	right:0;
+}
+
+.galant{
+	left:0;
+	top:120px;
+}
+
+.ilab{
+	right:0;
+	top:100px;
+}
+
+.three {
+	margin-right: 0;
+	position:relative;
+	background-image: url(images/bg.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+   background-position: right top;
+}
+
+.two h2{
+	font-size:30px;
+	line-height:28px;
+}
+
+.three h3{
+	margin:0;
+	position:absolute;
+	background-color:rgba(0,0,0,.5);
+	color:white;
+	bottom:0;
+	padding:20px;
+	font-size:20px;
+
+}
+
+@font-face{
+	font-family:'Gotham';
+	src:url(fonts/gothammedium-webfont.ttf) format('truetype');
+}
 
 @media screen and (max-width: 900px) {
 	/* Refer to the 875px-wide browser screenshot for how this should look */
-
 
 }
 

@@ -101,7 +101,7 @@ body {
 	margin-right: 0;
 	position:relative;
 	background-image: url(images/bg.jpg);
-	background-size:100% 100%;
+	background-size:100% auto;
 	background-repeat: no-repeat;
    background-position: right top;
 }
@@ -129,6 +129,32 @@ body {
 
 @media screen and (max-width: 900px) {
 	/* Refer to the 875px-wide browser screenshot for how this should look */
+	*{
+		background-color:white;
+	}
+	.one,.two{
+		display:inline-block;
+		width:45%;
+		position:relative;
+	}
+
+	.two h2{
+		font-size:20px;
+		line-height:18px;
+		position:absolute;
+		top:55px;
+	}
+
+	.two i{
+		position:absolute;
+		top:195px;
+	}
+
+	.three{
+		width:100%;
+		margin-top:75px;
+		margin-bottom:75px;
+	}
 
 }
 
@@ -136,5 +162,14 @@ body {
 	/* Refer to the 525px-wide browser screenshot for how this should look */
 	/* At this point the partner logos switch back to just being two across. */
 
+	
+
+	.one,.two{
+		width:100%;
+	}
+
+	.three{
+		margin-top:25px;
+	}
 
 }
